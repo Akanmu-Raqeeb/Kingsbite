@@ -1,0 +1,84 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
+
+header{border-bottom: 1px  ;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    top: 0px;
+    color: black;
+    z-index: 1000;
+}
+.price{
+    color: red;
+}
+body{
+    background-color: #fffdd0;
+}
+html body {
+    padding: 0px;
+    margin: 0px;
+    
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+}
+section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    align-items: center;
+
+justify-content: space-between;
+}
+.card-img-top{
+    height: 250px !important;
+}
+.card{
+    margin: 5px !important;
+    width: 30% !important;
+}
+.btn{
+    background-color:  #ff160c;
+    color: white;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    background-color: lawngreen;
+}
+@media screen and (max-width: 490px) {
+    
+    .card{
+        width: 45% !important;
+        
+    }
+    
+}
+@media screen and (max-width: 290px) {
+    
+    .card{
+        width: 100% !important;
+        
+    }
+    header{
+        font-size: 12px;
+    }
+}

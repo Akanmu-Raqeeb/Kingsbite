@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{padding-top: 20px;
+     background-image: url(./img/back.JPG);
+     background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+main{background-color: rgba(0, 0, 0, 0.326);
+    height: 500px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    /* background-image: url(./img/DNTF5179.JPG);
+     background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover; */
+}
+h1{
+    color:  #ff160c;
+    text-align: center;
+}
+span{
+    color: #ff160c;
+}
+input{
+    border-top: none; 
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ff160c;
+    color: white;
+    outline: none;
+}
+.centering{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: black;
+    border: 1px solid  #ff160c;
+    color: #ff160c;
+    padding: 10px;
+    border-radius: 10px;
+}
+p{
+    color: white;
+    text-align: center;
+}
+button:hover{
+    background-color: white;
+    border: 1px solid  #ff160c;
+    color: #ff160c;
+    padding: 10px;
+    font-size: bold;
+    font-weight: 400;
+}
+@media (max-width:580px) {
+    main{
+        width: 60%;
+    }
+    
+}
+@media (max-width:350px) {
+    main{
+        width: 80%;
+    }
+    
+}
+a{
+    text-decoration: none;
+}
+</style>
+    <title>Kingsbite</title>
+</head>
+<body>
+    <main>
+<h1>Kingsbite</h1>
+
+<span>Username:</span><br><br>
+<input id="user" type="text" placeholder="Username" oninput="opp()">
+<br>
+<br>
+<span>Email:</span><br><br>
+<input type="email" placeholder="Email address">
+<br>
+<br>
+<span>Password:</span><br><br>
+<input type="password" placeholder="Password">
+<br><br>
+<span>Confirm Password:</span><br><br>
+<input type="password" placeholder="Confirm Password">
+<br><br><br>
+<div class="centering">
+<a href="food.html"><button>Sign UP</button></a>
+</div>
+<a href="login.html"><p>Alredy have an account?</p></a>
+
+ 
+    </main>
+</body>
+<script>
+    function opp(){
+        let jim = document.getElementById('user').value
+        localStorage.setItem('name',jim)
+        console.log(localStorage.getItem('name'));
+    }
+    
+</script>
+</html>

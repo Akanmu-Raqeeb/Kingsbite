@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="snack.css">
+    <title>Kingsbite</title>
+</head>
+<body>
+    
+
+    <header>
+        <div class="sec1">
+        <a href="index.html"><img src="./img/YBRH0342.JPG" width="100%" height="40px" srcset=""></a>
+        </div>
+       <a href="food.html"><div>Meals</div></a>
+        <div>
+            Welcome <span></span><i class="fa-regular fa-user"></i>
+        </div>
+        
+        <div>Cart<span> <i class="fa-solid fa-cart-shopping fa-bounce"></i></span></div>
+                
+            </header>
+            
+            <h1>Snacks</h1>
+            <section id="meal">
+<!-- 
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">Place Order</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+        
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">Place Order</a>
+                    </div>
+                  </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+                    
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">Place Order</a> -->
+                    </div>
+                  </div>
+            
+
+</body>
+<script>
+let meal = document.getElementById('meal')
+let data=[
+    
+{
+    img:'./img/TUPU3580.JPG',
+    text:'Cinnamon Roll',
+    price:'#300',
+},
+    
+{
+    img:'./img/EOVU3240.JPG',
+    text:'Meat Pie',
+    price:'#500',
+},
+    
+{
+    img:'./img/JEGR8420.JPG',
+    text:'Croissant',
+    price:'#600',
+},
+    
+{
+    img:'./img/VXIZ2512.JPG',
+    text:'Ring Donut',
+    price:'#200',
+},
+    
+{
+    img:'./img/TDWG2932.JPG',
+    text:'Round Filled Donut',
+    price:'#500',
+},
+    
+
+
+
+
+
+]
+data.forEach(element => {
+    return(
+
+    meal.innerHTML+=`<div class="card" style="width:400px">
+                    <img class="card-img-top" src="${element.img}" alt="Card image">
+                    <div class="card-body">
+                      
+                      <p class="card-text">${element.text} <span class='price'>${element.price}</span></p>
+                      <a href="#" class="btn btn-primary">Place Order</a>
+                    </div>
+                  </div>
+`
+    )
+});
+
+
+
+</script>
+</html>
